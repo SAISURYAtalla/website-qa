@@ -1,0 +1,27 @@
+{
+  "name": "olostep-website-qa",
+  "version": "1.0.0",
+  "description": "Automated QA platform for www.olostep.com — powered by Olostep APIs",
+  "main": "src/index.ts",
+  "scripts": {
+    "qa": "npx tsx src/index.ts",
+    "qa:ai": "npx tsx src/index.ts --ai",
+    "qa:quick": "npx tsx src/index.ts --skip-link-check"
+  },
+  "keywords": ["qa", "olostep", "website-testing"],
+  "author": "Olostep",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "commander": "^15.0.0",
+    "dotenv": "^18.0.4",
+    "exceljs": "^4.4.0",
+    "p-limit": "^7.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3"
+  }
+}
